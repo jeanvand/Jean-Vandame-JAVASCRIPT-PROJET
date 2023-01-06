@@ -1,0 +1,49 @@
+
+#button1 {
+    margin-left: 743px;
+    margin-bottom: 2px;
+}
+
+#body {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.container {
+    display: flex;
+}
+
+.cards {
+    width: 305px;
+    height: 760px;
+    transform: translateY(800px);
+  /*   transform: translateY(0px); */
+    transition: transform 0.5s ease;
+    }
+
+  /* couleur de mes cards */
+#card0 {
+    background-color: rgb(50, 50, 180);
+}
+
+#card1 {
+    background-color: rgb(50, 50, 160);
+}
+
+#card2 {
+    background-color: rgb(50, 50, 140);
+}
+
+#card3 {
+    background-color: rgb(50, 50, 120);
+}
+
+#card4 {
+    background-color: rgb(22, 22, 99);
+}
+
+  /* Etat qui vient écraser le premier lorsque le container obtient la classe active */
+
+.active {
+    transform: translateY(0px);
+}
