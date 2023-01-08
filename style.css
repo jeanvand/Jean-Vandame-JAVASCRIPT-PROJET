@@ -1,21 +1,24 @@
 
-#button1 {
-    margin-left: 743px;
+#button0 {
+    margin-left: 734px;
     margin-bottom: 2px;
+    
 }
 
 #body {
     margin-left: 5px;
     margin-right: 5px;
+    background-color:rgb(92 137 195);
 }
 
 .container {
     display: flex;
+    margin: 20px
 }
 
 .cards {
-    width: 305px;
-    height: 760px;
+    width: 321px;
+    height: 690px;
     transform: translateY(800px);
   /*   transform: translateY(0px); */
     transition: transform 0.5s ease;
@@ -24,26 +27,69 @@
   /* couleur de mes cards */
 #card0 {
     background-color: rgb(50, 50, 180);
+    margin-left: 25px;
+    margin-right: 25px;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
 }
+
+@keyframes example {
+    0% {
+    transform: rotate(0deg);
+    }
+    100% {
+    transform: rotate(360deg);
+    }}
+
+
+    .animated {
+        animation-play-state: running;
+        animation-name: example;
+    }
 
 #card1 {
     background-color: rgb(50, 50, 160);
+    margin-left: 25px;
+    margin-right: 25px;
 }
 
 #card2 {
     background-color: rgb(50, 50, 140);
+    margin-left: 25px;
+    margin-right: 25px;
 }
 
 #card3 {
     background-color: rgb(50, 50, 120);
-}
-
-#card4 {
-    background-color: rgb(22, 22, 99);
+    margin-left: 25px;
+    margin-right: 25px;
 }
 
   /* Etat qui vient écraser le premier lorsque le container obtient la classe active */
-
 .active {
     transform: translateY(0px);
+}
+
+.bouttons {
+    margin: 10px;
+    width: 299px;
+    height: 258px;
+}
+
+#para1 {
+    margin-left: 16px;
+    margin-right: 16px;
+    color: aliceblue;
+}
+
+.violet {
+    background-color: rgb(164, 24, 162) !important;
+}
+
+.noir {
+    background-color: black !important;
+}
+
+.rouge {
+    background-color: rgb(93, 2, 20) !important;
 }
